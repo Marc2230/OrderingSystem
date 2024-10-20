@@ -19,7 +19,7 @@ public class OrderingSystemApp extends javax.swing.JFrame {
         initComponents();
         try{
             File fontStyle = new File("src\\orderingsystem\\resources\\fonts\\Anton-Regular.ttf");
-            Font Anton = Font.createFont(Font.TRUETYPE_FONT, fontStyle).deriveFont(68f);
+            Font Anton = Font.createFont(Font.TRUETYPE_FONT, fontStyle).deriveFont(59f);
             Title.setFont(Anton);
         }catch(Exception e){
             e.printStackTrace();
@@ -36,7 +36,17 @@ public class OrderingSystemApp extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         Title = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -44,13 +54,44 @@ public class OrderingSystemApp extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(186, 244, 151));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Title.setBackground(new java.awt.Color(202, 119, 23));
-        Title.setFont(new java.awt.Font("SansSerif", 0, 68)); // NOI18N
-        Title.setForeground(new java.awt.Color(202, 119, 23));
-        Title.setText("Slice of Ha");
+        jPanel2.setBackground(new java.awt.Color(64, 100, 36));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Title.setBackground(new java.awt.Color(255, 255, 0));
+        Title.setFont(new java.awt.Font("SansSerif", 0, 50)); // NOI18N
+        Title.setForeground(new java.awt.Color(252, 217, 85));
+        Title.setText("Slice of Haven");
         Title.setToolTipText("");
         Title.setPreferredSize(new java.awt.Dimension(1280, 150));
-        jPanel1.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 600, 150));
+        jPanel2.add(Title, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, -20, 350, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 100));
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setAutoscrolls(false);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 620));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 130, 380, 620));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, 180, 250));
+
+        jPanel5.setBackground(new java.awt.Color(255, 251, 230));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 180, 250));
+
+        jPanel6.setBackground(new java.awt.Color(255, 251, 230));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, 180, 250));
+
+        jPanel7.setBackground(new java.awt.Color(255, 251, 230));
+        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, 180, 250));
+
+        jPanel8.setBackground(new java.awt.Color(255, 251, 230));
+        jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 470, 180, 250));
+        jPanel1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, 180, 250));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 780));
 
@@ -96,5 +137,15 @@ public class OrderingSystemApp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Title;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
